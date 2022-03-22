@@ -1,0 +1,26 @@
+.footer {
+    background: #313131;
+    /* position: relative; */
+    top: 3rem;
+    /* margin-top: 4rem; */
+    height: 150px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+/* .footer-social-media 
+    margin-top: 2rem;
+    color: var(--clr-white);
+    text-align: center;
+    font-size: 1.5rem;
+    letter-spacing: 0.55rem;
+    /* margin-left: 3px; */
+.footer-text {
+    color: var(--clr-white);
+    font-size: 1rem;
+    text-align: center;
+    letter-spacing: var(--spacing);
+}
+.petar {
+    color: var(--clr-primary-light);
+}

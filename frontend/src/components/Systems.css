@@ -1,0 +1,43 @@
+.systemsHeader {
+    text-align: center;
+}
+.prod-list {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.column {
+    width: 23%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 270px;
+    margin-bottom: 7px;
+}
+.prod-list .img {
+  width: 180px;
+  height: 180px;
+  background-position: center center;
+  background-size: cover;
+  margin: 10px 0;
+}
+.prod-list img {
+  margin-right: 5px;
+}
+
+.prod-list a {
+  display: block;
+  margin: 5px 0;
+  font-weight: bold;
+  color: #203a6d;
+}
+
+.prod-list h1 {
+  color: #203a6d;
+  display: inline-block;
+}
+
+.picture {
+  width: 100%;
+}
