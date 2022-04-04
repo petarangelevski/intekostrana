@@ -108,19 +108,4 @@ Uslugi Cards
     flex: 1;
     padding: 1rem;
   }
-
-.listItem-wrap img {
-    cursor: pointer;
-}
-
-.listItem-wrap img:hover {
-    filter: opacity(.6);
-}
-@media (min-width: 320px) and (max-width: 480px) {
-    .list-wrap {
-        grid-template-columns: auto;
-    }
-    .nav-wrapper {
-        display: none;
-    }
-  }
+  

@@ -3,20 +3,20 @@ import Axios from 'axios';
 import Popup from 'reactjs-popup';
 import 'reactjs-popup/dist/index.css';
 import "./Object.css"
+import Pagination from './Systems/Pagination';
 import CloseIcon from '@mui/icons-material/Close';
-import ObjectsPosts from './Objects/ObjectsPosts'
-import Pagination from "./Systems/Pagination";
 
 const styles= {
     textAlign: 'center'
 }
-export const Objects = () => {
-    const [first, setFirst] = useState([]);
+const DetskiIgralista = () => {
+    const [first, setFirst] = useState([])
     const [currentPage, setCurrentPage] = useState(1);
     const [postsPerPage, setPostsPerPage] = useState(8);
     const [pageNumberLimit, setPageNumberLimit] = useState(3);
     const [maxPageNumberLimit, setmaxPageNumberLimit] = useState(3);
     const [minPageNumberLimit, setminPageNumberLimit] = useState(0);
+
     const [model, setModel] = useState(false);
     const [tempImgPath, setTempImgPath] = useState('');
 
@@ -24,6 +24,7 @@ export const Objects = () => {
       setTempImgPath(imgSrc);
       setModel(true);
     }
+  
     // Get current posts
     const indexOfLastPost = currentPage * postsPerPage;
     const indexOfFirstPost = indexOfLastPost - postsPerPage;
@@ -48,7 +49,7 @@ export const Objects = () => {
       }
     };
     useEffect(() => {
-      Axios.get("http://localhost:3001/api/objects")
+      Axios.get("http://localhost:3001/api/objects/detski-igralista")
       .then((response) => {
           setFirst(response.data)
       })
@@ -66,11 +67,9 @@ export const Objects = () => {
                   <div className='list-wrap'>
         {first.map((object, index) => {
         return (
-          
                       <div className='listItem-wrap' key={index} onClick={() => getImg(object.image_path)}>
                       <>
-                      <img src={object.image_path} alt="product_image" />
-                      <div className="split_wrap">
+                      <img src={object.image_path} alt="product_image" /><div className="split_wrap">
                           <div className='split' />
                           <div className='split__button_s' />
                           <div className='split__button_ss' />
@@ -104,4 +103,4 @@ export const Objects = () => {
         )
 }
 
-export default Objects;
+export default DetskiIgralista;

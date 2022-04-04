@@ -2,13 +2,15 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import "./Home.css"
 import SponsorImage from "./images/logo-babolat.png"
+import CasaliSponsor from "./images/casali.jpg"
 function Home() {
-  <div className='sponsor'>
-    <img src={SponsorImage} alt='sponsor' className='sponsorPic' />
-
-  </div>
   return (
-    <><section>
+    <>
+  <div className='sponsor'>
+    <div className='babolatsponsor'><img src={SponsorImage} alt='sponsor' className='sponsorPic' /></div>
+    <div className='casalisponsor'><img src={CasaliSponsor} alt='sponsor' className='sponsorPic' /></div>
+  </div>
+      <section className='home__objects'>
       <div className="section-center clearfix">
         <article className="about-img">
           <div className="about-picture-container">
