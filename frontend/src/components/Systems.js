@@ -9,7 +9,7 @@ import Pagination from "./Systems/Pagination";
 
 export const Systems = () => {
   const [currentPage, setCurrentPage] = useState(1);
-  const [postsPerPage, setPostsPerPage] = useState(8);
+  const [postsPerPage, setPostsPerPage] = useState(9);
   const [pageNumberLimit, setPageNumberLimit] = useState(3);
   const [maxPageNumberLimit, setmaxPageNumberLimit] = useState(3);
   const [minPageNumberLimit, setminPageNumberLimit] = useState(0);

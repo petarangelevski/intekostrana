@@ -124,3 +124,22 @@ Uslugi Cards
         display: none;
     }
   }
+
+  @media (min-width: 481px) and (max-width: 768px) {
+    .list-wrap {
+        grid-template-columns: auto;
+    }
+    .nav-wrapper {
+        display: none;
+    }
+  }
+
+  @media (min-width: 769px) and (max-width: 1024px) {
+    .list-wrap {
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 2rem;
+    }
+    .nav-wrapper {
+        display: none;
+    }
+  }

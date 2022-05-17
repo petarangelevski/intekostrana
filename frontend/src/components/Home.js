@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import "./Home.css"
 import SponsorImage from "./images/logo-babolat.png"
-import CasaliSponsor from "./images/casali.jpg"
+import CasaliSponsor from "./images/casaliLogo.jpg"
 function Home() {
   return (
     <>

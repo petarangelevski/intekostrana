@@ -1,7 +1,5 @@
 import React, { useEffect, useState } from 'react';
 import "../Nav.css";
-import logo from "../images/logo.png";
-import bootstrap from "bootstrap"
 import MailOutlineIcon from '@mui/icons-material/MailOutline';
 import LocationOnIcon from '@mui/icons-material/LocationOn';
 import PhoneInTalkIcon from '@mui/icons-material/PhoneInTalk';

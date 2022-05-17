@@ -209,6 +209,7 @@ Produkti
         flex-direction: column;
         justify-content: center;
         text-align: center;
+        align-items: center;
     }
     .product-text{
         padding: 0;
@@ -218,6 +219,7 @@ Produkti
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        position: initial;
     }
     .product-img-container1{
         margin: 0;

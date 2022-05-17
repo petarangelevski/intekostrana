@@ -66,15 +66,18 @@ return (
               return (
                 <div className='listItem-wrap' key={index} onClick={() => getImg(product.image_path)}>
                   <>
-                    <img src={product.image_path} alt="product_image" /><div className="split_wrap">
+                    <img src={product.image_path} alt="product_image" />
+                    <div className="split_wrap">
                       <div className='split' />
                       <div className='split__button_s' />
                       <div className='split__button_ss' />
                       <div className='split__button_sss' />
-                    </div><header>
+                    </div>
+                    <header>
                       <h4>{product.brand}</h4>
                       <span>{product.type}</span>
-                    </header><footer>
+                    </header>
+                    <footer>
                       <p>
                         {product.description}
                       </p>
